@@ -76,55 +76,7 @@
 }
 
 
-/* end  */
-
-
-/* responsive nav starts */
-
-@media screen and (max-width:600px) {
-    .toggle-button {
-        display: flex;
-    }
-    .center_part {
-        display: none;
-        width: 100%;
-        margin-top: 20px;
-    }
-    .right_part {
-        display: none;
-    }
-    .left_part {
-        margin-left: 40px;
-    }
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .center_part ul {
-        flex-direction: column;
-        width: 100%;
-    }
-    .center_part ul li:hover {
-        background-color: #4f4a4a;
-    }
-    .center_part ul li {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .center_part .active {
-        background: none;
-        margin-top: 20px;
-        padding-left: 10px;
-    }
-    .center_part.below {
-        display: flex;
-    }
-}
-
-
-/* responsive navbar end */
-
-
+/* end  *
 /* section one end here */
 
 
@@ -485,14 +437,14 @@ small {
 
 .section8 {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
+    background-color: black;
 }
 
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    background-color: black;
     padding: 70px 100px 20px 100px;
 }
 
@@ -500,9 +452,19 @@ small {
     color: #fff;
 }
 
-.copy {
-    width: 120%;
-    margin-left: 600px;
+.main_line {
+    width: 80%;
+    height: 0.1rem;
+    background-color: rgb(139, 139, 139);
+    justify-content: center;
+    margin-left: 4rem;
+}
+
+.line h1 {
+    color: rgb(139, 139, 139);
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
 }
 
 
@@ -598,7 +560,7 @@ small {
         gap: 20px;
     }
     .section3 {
-        height: 200vh;
+        height: 100%;
     }
     .section4 {
         height: 100vh;
@@ -609,25 +571,37 @@ small {
     .commi-container {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        text-align: center;
         gap: 20px;
     }
     .section6 {
-        height: 220vh;
+        height: 140vh;
     }
     .log-container {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        text-align: center;
         gap: 20px;
     }
+    .head-container {
+        display: block;
+    }
     .section7 {
-        height: 100vh;
+        height: 80vh;
+    }
+    .two-div-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
     }
     .section8 {
-        height: 200vh;
+        height: 130vh;
     }
     .footer-container {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        text-align: center;
         gap: 20px;
     }
 }
